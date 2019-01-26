@@ -1,37 +1,56 @@
 <html>
   <head>
     <title>Web Development 101 en Twitch</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
-      #titulo {
-        color: red;
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      /*
+        BEM: Block, Element and Modifier
+
+      */
+      .page {
+        margin: 0 auto;
+        width: 500px;
+      }
+
+      .page__title {
         text-align: center;
       }
 
-      .enlace {
-        color: black;
-        text-transform: uppercase;
+      .page__summary {
+        color: red;
+        font-size: 12px;
       }
+
+      .page__summary--green {
+        color: green;
+      }
+
+      .page__summary--big {
+        color: black;
+        font-size: 80px;
+      }
+
+
     </style>
   </head>  
   <body>
-    <h1 id="titulo" >
-      Mi pagina de prueba
-    </h1>
-    <!-- Esto no deben hacer XD -->
-    <!-- <h2 id="titulo" >
-      Mi pagina de prueba 2
-    </h2> -->
-    <p>
-      Hola! Estamos aqui desde Twitch! :D
-    </p>
-
-    <a class="enlace" href="https://www.fayerwayer.com">
-      aqui un zelda
-    </a>
-    <br>
-    <a class="enlace" href="https://www.fayerwayer.com">
-      aqui un zelda numero 2
-    </a>
     
+    <div class="page">
+      <h1 class="page__title" >Titulo de la pagina</h1>
+      <p class="page__summary">
+        Primer parrafo
+      </p>
+      <p class="page__summary">
+        Segundo parrafo
+      </p>
+      <p class="page__summary page__summary--green">
+        Tercer parrafo
+      </p>
+    </div>
+
   </body>
 </html>
